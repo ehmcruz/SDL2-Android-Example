@@ -1,6 +1,6 @@
 # Note
 
-99% based on https://github.com/ehmcruz/SDL2-Android-Test
+99% based on https://github.com/AlexanderAgd/SDL2-Android-Example
 
 # SDL2-Android-Example
 
