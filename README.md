@@ -1,4 +1,9 @@
+# Note
+
+99% based on https://github.com/ehmcruz/SDL2-Android-Test
+
 # SDL2-Android-Example
+
 SDL2 Example for Android, C/C++ template build tree.
 
 Requires Android NDK and android SDK Tools.
@@ -20,5 +25,12 @@ to build apk file. Check apk file in "app/build/output/apk/" directory. Or run:
 ./gradlew installDebug
 </pre>
 to build APK and install it on your Android device.
+
+# My ehmcruz README
+
+## Install SDL
+
+Google drive: ~/tutoriais/sdl android
+
 
 ![](screenshot.png)
