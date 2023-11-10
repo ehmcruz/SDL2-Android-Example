@@ -22,9 +22,29 @@ int main(int argc, char* args[]) {
     fprintf(stderr, "could not create window: %s\n", SDL_GetError());
     return 1;
   }
-  screenSurface = SDL_GetWindowSurface(window);
-  SDL_FillRect(screenSurface, NULL, SDL_MapRGB(screenSurface->format, 0xFF, 0xFF, 0xFF));
-  SDL_UpdateWindowSurface(window);
+
+ SDL_Renderer* renderer = NULL;
+    renderer =  SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED);
+
+ SDL_SetRenderDrawColor( renderer, 255, 0, 255,  0);
+
+    // Clear winow
+    SDL_RenderClear( renderer );
+
+SDL_Rect r;
+    r.x = 50;
+    r.y = 50;
+    r.w = 200;
+    r.h = 200;
+
+ SDL_SetRenderDrawColor( renderer, 0, 0, 255, 255 );
+
+    // Render rect
+    SDL_RenderFillRect( renderer, &r );
+
+    // Render the rect to the screen
+    SDL_RenderPresent(renderer);
+ 
   SDL_Delay(2000);
   SDL_DestroyWindow(window);
   SDL_Quit();
