@@ -2,6 +2,8 @@
 
 99% based on https://github.com/AlexanderAgd/SDL2-Android-Example
 
+https://wiki.libsdl.org/SDL2/Android
+
 # SDL2-Android-Example
 
 SDL2 Example for Android, C/C++ template build tree.
